@@ -1,0 +1,130 @@
+html {
+    font-size: 32px;
+  }
+  
+  main {
+    font-family: serif;
+  }
+  
+  body {
+    background: papayawhip;
+    color: darkslategrey;
+  }
+  
+  .layer {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    user-select: none;
+    
+  }
+  
+  .circle {
+    background-color: lightslategray;
+    border: black;
+    color: white;
+    padding: 10%12%;
+    text-align: center;
+    text-decoration: black;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: left;
+    clip-path: circle();
+    user-select: none;
+    float: left;
+  }
+  
+  .circle :nth-child(1){
+    background-color: green;
+  }
+
+  .circle :nth-child(2){
+    background-color: red;
+  }
+
+  .circle :nth-child(3){
+    background-color: yellow;
+  }
+
+  .circle :nth-child(4){
+    background-color: blue;
+  }
+  
+  .circlePos {
+    background-color: lightslategray;
+    border: black;
+    color: white;
+    padding: 1%2%;
+    text-align: center;
+    text-decoration: black;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: left;
+    clip-path: circle();
+    user-select: none;
+    float: left;
+  }
+
+  .circlePos:hover,
+  .circleNeg:hover {
+    background-color: rgba(119, 136, 153, 0.541);
+    
+  }
+  
+  .circleNum {
+    background-color: lightslategray;
+    border: black;
+    color: white;
+    padding: 1%2%;
+    text-align: center;
+    text-decoration: black;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: left;
+    clip-path: circle();
+  
+    float: left;
+  }
+  
+  .date {
+    font: inherit;
+    color: slategray;
+  }
+  
+  .layer:nth-child(1) {
+    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+    width: 29%;
+    height: 150px;
+    background-color: red;
+    z-index: 1;
+    opacity: 1;
+    align-items: safe center;
+  
+  }
+  
+  .layer:nth-child(1):hover {
+    background-color: #cfdbd5;
+  }
+  
+  
+  
+  .layer:nth-child(n) .circlePos,
+  .layer:nth-child(n) .circleNeg {
+    display: none;
+  }
+  
+  .layer:nth-child(n):hover .circlePos,
+  .layer:nth-child(n):hover .circleNeg {
+    display: block;
+  }
+  
+  
+  .p {
+    font: inherit;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+  }
+  
